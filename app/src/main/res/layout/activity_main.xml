@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="User Form"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +26,7 @@
             android:id="@+id/nameEditText"
             android:layout_margin="10dp"
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:hint="Enter your name"
             android:textSize="20dp"
             android:padding="6dp"
@@ -61,10 +51,11 @@
             android:layout_marginRight="20dp"
             />
         <Spinner
+            android:layout_gravity="center"
             android:id="@+id/countryDropDown"
             android:layout_marginLeft="20dp"
             android:layout_width="220dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:textAlignment="center"
             />
 
@@ -85,10 +76,11 @@
             android:layout_marginRight="20dp"
             />
         <Spinner
+            android:layout_gravity="center"
             android:id="@+id/cityDropDown"
             android:layout_marginLeft="20dp"
             android:layout_width="220dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:textAlignment="center"
             />
 
@@ -110,12 +102,12 @@
             />
         <TextView
             android:id="@+id/dateofBirth"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="10/10/2022"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:hint="Select date"
+            android:textSize="18dp"
+            android:textStyle="normal"
             android:padding="4dp"
             android:layout_marginRight="20dp"
             />
@@ -133,6 +125,7 @@
         android:orientation="horizontal"
         android:padding="2dp">
         <TextView
+            android:id="@+id/skill"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -228,10 +221,23 @@
 
 
     </LinearLayout>
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:text="No file Selected"
+        android:textSize="15dp"
+        android:gravity="right"
+        android:paddingEnd="20dp"
+        android:padding="4dp"
+        android:textColor="#C5CAE9"
+        android:layout_gravity="right"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/saveButton"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Save"
@@ -240,7 +246,7 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/showUserData"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="User Info"

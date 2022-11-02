@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:layout_gravity="start"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="4dp"
+    android:layout_margin="2dp"
+    >
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/userName"
+            android:textSize="22dp"
+            android:hint="Name"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/userDateOfBirth"
+            android:textSize="18dp"
+            android:hint="date"
+            android:gravity="start"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="view"
+            android:textSize="16dp"
+            android:id="@+id/view" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="delete"
+            android:textSize="16dp"
+            android:id="@+id/delete" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewUserInfo"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Previous Name"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/preName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Name"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Update Name"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/updateName"
+                    android:layout_margin="10dp"
+                    android:layout_width="220dp"
+                    android:layout_height="60dp"
+                    android:hint="Enter your name"
+                    android:textSize="20dp"
+                    android:padding="6dp"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Country and City"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/preadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Name"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Country  :"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <Spinner
+                    android:layout_gravity="center"
+                    android:id="@+id/upcountryDropDown"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="City         :"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <Spinner
+                    android:layout_gravity="center"
+                    android:id="@+id/upcityDropDown"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Date of Birth  :"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <TextView
+                    android:id="@+id/updateofBirth"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Select date"
+                    android:textSize="18dp"
+                    android:textStyle="normal"
+                    android:padding="4dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/updatePickerAction"
+                    android:layout_gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Select"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Pre Skills :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/upskill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="skill"
+                    android:textSize="20dp"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Language :"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    >
+                    <CheckBox
+                        android:id="@+id/upenglishCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="English"
+                        android:textSize="18dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/upfranchCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Franch"
+                        android:textSize="18dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/uphindiCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hindi"
+                        android:textSize="18dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    >
+                    <CheckBox
+                        android:id="@+id/upbanglaCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bangla"
+                        android:textSize="18dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/uparabicCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arabic"
+                        android:textSize="18dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/upjapaneseCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Japanese"
+                        android:textSize="18dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/updateButton"
+                android:layout_marginTop="4dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/viewPDFButton"
+                android:layout_marginTop="4dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="View PDF"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
